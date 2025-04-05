@@ -115,9 +115,7 @@
         ">
         shop-grid
       </div>
-      <div
-        class="shop-grid-content"
-        style="display: flex; gap: 5px; font-size: 16px; padding-bottom: 126px">
+      <div class="shop-grid-content">
         <div>Home</div>
         <div>.</div>
         <div>Pages</div>
@@ -184,12 +182,16 @@
               <div>view</div>
               <div>
                 <img
+                  id="grid"
+                  onclick="setGrid()"
                   style="margin-left: 1px"
                   src="images/clarity_grid-view-solid.png"
                   alt="" />
               </div>
               <div>
                 <img
+                  id="list"
+                  onclick="setList()"
                   style="margin-right: 9px"
                   src="images/fa-solid_list.png"
                   alt="" />
@@ -205,31 +207,33 @@
       </div>
     </div>
     <!--  -->
-    <div class="images_card_container">
+    <div id="card_container" class="images_card_container grid_view">
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div
-            style="
-              display: flex;
-              /* background-color: blue; */
-              gap: 10px;
-              justify-content: center;
-            ">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt="" />
+            </div>
+            <div
+              style="
+                display: flex;
+                /* background-color: blue; */
+                gap: 10px;
+                justify-content: center;
+              ">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -237,21 +241,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt="" />
+            </div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -259,21 +265,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt=""
+            /></div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -281,21 +289,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt=""
+            /></div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -303,21 +313,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt=""
+            /></div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -325,21 +337,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt=""
+            /></div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -347,21 +361,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt=""
+            /></div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -369,21 +385,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt=""
+            /></div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -391,21 +409,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt=""
+            /></div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -413,21 +433,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt=""
+            /></div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -435,21 +457,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt=""
+            /></div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -457,21 +481,23 @@
       <div class="images_card">
         <div class="image_container">
           <img
-            style="margin-top: 8px; margin-bottom: 15px; width: 100%"
+            class="image_container_image"
             src="images/imagecards/image 1.png "
             alt="" />
         </div>
-        <div style="text-align: center">
-          <div class="images_card_name"> Vel elit euismod </div>
-          <div
-            ><img
-              style="margin-top: 8px; margin-bottom: 15px"
-              src="images/imagecards/Group 44.png"
-              alt=""
-          /></div>
-          <div style="display: flex; gap: 10px; justify-content: center">
-            $26.00
-            <div style="color: #fb2e86"> $42.00 </div>
+        <div class="image_description">
+          <div class="image_details" id="photo_desc">
+            <div class="images_card_name"> Vel elit euismod </div>
+            <div>
+              <img
+                style="margin-top: 8px; margin-bottom: 15px"
+                src="images/imagecards/Group 44.png"
+                alt=""
+            /></div>
+            <div style="display: flex; gap: 10px; justify-content: center">
+              $26.00
+              <div style="color: #fb2e86"> $42.00 </div>
+            </div>
           </div>
         </div>
       </div>
@@ -545,5 +571,6 @@
       <div> ©Webecy - All Rights Reserved </div>
       <div><img src="images/Group 205.png" alt="" /></div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
