@@ -166,11 +166,11 @@
                   border: 1px solid #e7e6ef;
                   max-width: 74px;
                   margin-right: 35px;
+                  padding-left: 5px;
                 "
                 type="text"
                 name=""
                 id=""
-                style="background-color: red"
                 src="images/down.png"
                 placeholder="Best Match"
                 alt="" />
@@ -199,8 +199,19 @@
             </div>
             <div>
               <input
-                style="max-width: 162px; border: 1px solid #e7e6ef; width: 100%"
+                style="
+                  max-width: 162px;
+                  border: 1px solid #e7e6ef;
+                  width: 100%;
+                  padding-left: 10px;
+                "
+                id="viewType"
+                list="viewOptions"
                 type="text" />
+              <datalist id="viewOptions">
+                <option value="grid"></option>
+                <option value="list"></option>
+              </datalist>
             </div>
           </div>
         </div>

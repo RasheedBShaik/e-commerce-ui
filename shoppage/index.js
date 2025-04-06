@@ -60,7 +60,31 @@ function setList() {
             padding:20px;
             text-align:left;
             "
-            > This modern chair offers support and a sleek design.
-Perfect for home to rest and blending comfort with style.</div>`;
+            > 
+            This modern chair offers support and a sleek design.
+            Perfect for home to rest and blending comfort with style.</div>`;
   }
+}
+
+const input = document.getElementById("viewType");
+document.getElementById("viewType").setAttribute("autocomplete", "off");
+
+if (input === null) {
+  console.log("none");
+} else {
+  input.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      const value = input.value.toLowerCase();
+
+      if (value === "grid") {
+        console.log("grid");
+        setGrid();
+      } else if (value === "list") {
+        console.log("list");
+        setList();
+      } else {
+        console.log(value);
+      }
+    }
+  });
 }
